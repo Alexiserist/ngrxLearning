@@ -5,6 +5,11 @@ import { ChildComponent } from './component/counter/child/child.component';
 
 const routes: Routes = [
   {
+    path:'',
+    pathMatch: 'full',
+    redirectTo: 'counters'
+  },
+  {
     path:'counters',
     component: CounterComponent,
     children: [
